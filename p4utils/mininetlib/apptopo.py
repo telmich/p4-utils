@@ -141,7 +141,7 @@ class AppTopoStrategies(Topo):
     def l2_assignment_strategy(self):
 
         self.add_switches()
-        ip_generator = IPv4Network(unicode("10.0.0.0/16")).hosts()
+        ip_generator = IPv4Network(u"10.0.0.0/16").hosts()
 
         #add links and configure them: ips, macs, etc
         #assumes hosts are connected to one switch only
